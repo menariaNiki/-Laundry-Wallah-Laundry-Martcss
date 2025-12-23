@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Wallah</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555;
+        }
+
+        nav a:hover {
+            color: #0d99ff;
+        }
+
+        .user-btn {
+            background: #e6f3ff;
+            color: #0d99ff;
+            padding: 8px 18px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            color: #3b4a54;
+            line-height: 1.2;
+        }
+
+        .hero-text span {
+            color: #0d99ff;
+        }
+
+        .hero-text p {
+            margin: 20px 0;
+            color: #777;
+        }
+
+        .hero-text button {
+            background-color: #0d99ff;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero-img img {
+            width: 420px;
+        }
+
+        /* CONTENT */
+        section {
+            padding: 40px 80px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        table {
+            margin-top: 15px;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+        }
+
+        form input {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 300px;
+        }
+
+        button {
+            background-color: #0d99ff;
+            size : 50px;
+            color: white;
+            border: rectangle;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f5f5f5;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            header, .hero, section {
+                padding: 20px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+            }
+
+            .hero-img img {
+                width: 300px;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Logo</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <button class="user-btn">Username</button>
+</header>
+
+<div class="hero">
+    <div class="hero-text">
+        <h1>
+            Revitalize Your <br>
+            Clothes with Expert <br>
+            <span>Laundry Services!</span>
+        </h1>
+        <p>
+            From premium dry cleaning to swift wash and fold,
+            we deliver care and convenience.
+        </p>
+        <button>Book a service today!</button>
+    </div>
+
+    <div class="hero-img">
+        <img src="machine.png" alt="Laundry Machine">
+    </div>
+</div>
+</body>
+</html>
